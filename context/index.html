@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  	 <!--form class="main" action="action_page.php">
+  		Запрос:<br>
+		  <input type="text" name="search" value=""><br><br>
+		  <input type="submit" value="Submit">
+	</form-->
+	<section class="container">
+    	<div class="login">
+      		<h1>Поиск</h1>
+      		<form id="search" method="POST" action="javascript:void(null);" onsubmit="call()">
+        		<p>
+        			<input type="text" name="query" id="query" value="" placeholder="Поиск">
+        		</p>
+        		<p class="submit">
+        			<input type="submit" name="commit" value="Найти">
+       			</p>
+      		</form>
+    	</div>
+  	</section> 
+
+  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+     	function call() {
+     	  var msg   = $('#search').serialize();
+            $.ajax({
+              type: 'POST',
+              url: 'action.php',
+              data: msg,
+              success: function(data) {
+                //$('.results').html(response.name);
+                 console.log ( data ) ; 
+                 $('div.info').html(data);
+              },
+              error:  function(xhr, str){
+    	    alert('Возникла ошибка: ' + xhr.responseCode);
+              }
+            });
+     
+        }
+    </script>
+
+    <section class="container">
+    	<div class="login">
+      		<h1>Результат</h1>
+      		 <div class="info"></div>
+    	</div>
+  	</section> 
+
+</body>
+
+</html>
