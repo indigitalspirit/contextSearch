@@ -13,13 +13,15 @@
               url: 'action.php',
               data: msg,
               success: function(data) {
-                 var d_info = data.split('<vr>');
-                 console.log(d_info[0]);
-                 console.log(d_info[1]);
+                // var d_info = data.split('<vr>');
+                 //console.log(d_info[0]);
+                // console.log(d_info[1]);
+                 console.log(data);
                  //typeof($div_info);
                  //var arr = data.split('/'); 
-                 $('div.info_wm').html(d_info[0]);
-                 $('div.info_wp').html(d_info[1]);
+                 //$('div.info_wm').html(d_info[0]);
+                 $('div.info_wm').html(data);
+               //  $('div.info_wp').html(d_info[1]);
                  //$('div.info_wp').html($div_info[1]);
               },
               error:  function(xhr, str){
@@ -67,14 +69,14 @@
     <!--section id=result_wm class="col-dsk-4"-->
     <div class="col-dsk-4 col-tab-6 col-mob-12">
       <div class="result">
-          <h1>Поиск в DB по тегу</h1>
+          <h1>Поиск в DB</h1>
            <div class="info_wp"></div>
       </div>
     </div> 
     <!--section id=result_wm class="col-dsk-4"-->
     <div class="col-dsk-4 col-tab-6 col-mob-12">
       <div class="result">
-          <h1>Поиск по контексту по wikimapia</h1>
+          <h1>Поиск по контексту (yandex)</h1>
            <div class="info_gs"></div>
       </div>
     </div>
