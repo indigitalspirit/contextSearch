@@ -18,21 +18,14 @@ function get_context() {
     
     $user_tags = array();
 
-    /*if(strlen($context) == null) {
-      print "<script language='Javascript' type='text/javascript'>
-      alert ('Пустой контекст!');
-      </script>";
-      return;
-    }*/
-
 }
 
 function construct_url() {
 
   $url = 'http://api.wikimapia.org/?';
   $key = '030D67E2-DA816AC1-F0EBA91A-9AAF6AE2-CCE73D60-D49546B1-C08E9AF2-FA1FA000';
-  $lat = '61.784974';
-  $lon = '34.347038';
+  $lat = '59.938630';//$lat = '61.784974';
+  $lon = '30.314130';//'34.347038';
   $query = trim($_POST["query"]);//'лягушка';
 
 
@@ -62,16 +55,9 @@ function construct_url() {
   $url .= '&lat=' . $lat;
   $url .= '&lon=' . $lon;
   $url .= '&format=' . $format;
-  $url .= '&language=ru&page=1&count=50&distance=7000';
+  $url .= '&language=en&page=1&count=100&distance=10000';
   
- // echo "<p>" . $url . "</p><br><br>"; 
-
- // $url_example = 'http://api.wikimapia.org/?key=030D67E2-DA816AC1-F0EBA91A-9AAF6AE2-CCE73D60-D49546B1-C08E9AF2-FA1FA000&function=place.search&q=%D0%BB%D1%8F%D0%B3%D1%83%D1%88%D0%BA%D0%B0&lat=61.78491&lon=34.34691&format=xml&language=en&page=1&count=50';
-
-
-  
- // echo $response;
-
+ // echo "url:  " . $url;
   return $url;
 }
 ?>

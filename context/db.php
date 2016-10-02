@@ -190,12 +190,14 @@ function get_places_by_weight($db_conn, $context) {
 		echo "Ничего не найдено.";
 	}
 	else {
+
 		for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) {
 	//while($row = mysqli_fetch_array($res))
 	//{
 		$res->data_seek($row_no);
         $row = $res->fetch_assoc();
 		echo "".$row['title']."&nbsp &nbsp";
+		//echo "".$row['lat']."&nbsp &nbsp";
 		echo "".$row['weight']."<br><hr>";
 
 	}
