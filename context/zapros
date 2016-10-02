@@ -1,0 +1,1 @@
+select places.title, places.description, places.lat, places.lon, tags.name, mapping_context_tags.url_count, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name="пицца";

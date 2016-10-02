@@ -27,6 +27,7 @@ body {
 
 .container {
   margin:  auto;
+  margin-bottom: 20px;
   width: 640px;
 
 
@@ -36,7 +37,7 @@ body {
  position: relative;
   float: left;
   
-  width: 400px;
+  width: 700px;
    
    
 
@@ -44,7 +45,7 @@ body {
 
 .search, .result {
   position: relative;
-  margin: 100px;
+  margin: 50px;
   margin-top: 50px;
   padding: 20px 20px 20px;
   width: 310px;
@@ -53,6 +54,12 @@ body {
   /*-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
   */box-shadow:  0 1px 7px rgba(0, 0, 0, 0.3);
 }
+
+.result {
+  width: 430px;
+  
+}
+
 .search {
   margin: auto;
   
@@ -146,11 +153,14 @@ input[type=submit]:active {
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 867px){
   .col-dsk-1, .col-dsk-2, .col-dsk-3, .col-dsk-4, .col-dsk-5, .col-dsk-6,
   .col-dsk-7, .col-dsk-8, .col-dsk-9, .col-dsk-10, .col-dsk-11, .col-dsk-12 {
+    float: right;
   position: relative; 
+
   }
+
   .col-mob-1{
     width: 8.33%;
   }
@@ -190,11 +200,12 @@ input[type=submit]:active {
 } 
 
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 868px) and (max-width: 968px) {
   .col-dsk-1, .col-dsk-2, .col-dsk-3, .col-dsk-4, .col-dsk-5, .col-dsk-6,
   .col-dsk-7, .col-dsk-8, .col-dsk-9, .col-dsk-10, .col-dsk-11, .col-dsk-12 {
   float: left;
   position: relative; 
+
   }
   .col-tab-1{
     width: 8.33%;
@@ -235,7 +246,7 @@ input[type=submit]:active {
 } 
 
 
-@media (min-width: 992px){
+@media (min-width: 892px) {
   .col-dsk-1, .col-dsk-2, .col-dsk-3, .col-dsk-4, .col-dsk-5, .col-dsk-6,
   .col-dsk-7, .col-dsk-8, .col-dsk-9, .col-dsk-10, .col-dsk-11, .col-dsk-12 {
   float: left;

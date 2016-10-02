@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" language="javascript">
-      function call() {
+      function call_in_wm() {
         var msg   = $('#search').serialize();
+        console.log("in function call_in_wm()");
             $.ajax({
               type: 'POST',
               url: 'action.php',
@@ -30,6 +31,32 @@
             });
      
         }
+
+         function call_in_db() {
+        var msg   = $('#search').serialize();
+        console.log("in function call_in_db()");
+            $.ajax({
+              type: 'POST',
+              url: 'action_db.php',
+              data: msg,
+              success: function(data) {
+                // var d_info = data.split('<vr>');
+                 //console.log(d_info[0]);
+                // console.log(d_info[1]);
+                 console.log(data);
+                 //typeof($div_info);
+                 //var arr = data.split('/'); 
+                 //$('div.info_wm').html(d_info[0]);
+                 $('div.info_db').html(data);
+               //  $('div.info_wp').html(d_info[1]);
+                 //$('div.info_wp').html($div_info[1]);
+              },
+              error:  function(xhr, str){
+          alert('Возникла ошибка: ' + xhr.responseCode);
+              }
+            });
+     
+        }
     </script>
 </head>
 <body>
@@ -38,10 +65,10 @@
 		  <input type="text" name="search" value=""><br><br>
 		  <input type="submit" value="Submit">
 	</form-->
-	<section class="container">
-    	<div class="search">
+	<section class="container" style="margin-top: 20px;">
+    	<div class="search" style="padding-top: 20px;">
       		<h1>Поиск</h1>
-      		<form id="search" method="POST" action="javascript:void(null);" onsubmit="call()">
+      		<form id="search" method="POST" action="javascript:void(null);" >
         		<p>
         			<input type="text" name="query" id="query" value="" placeholder="Поиск">
         		</p>
@@ -49,8 +76,9 @@
               <input type="text" name="context" id="context" value="" placeholder="Контекст">
             </p>
         		<p class="submit">
-        			<input type="submit" name="commit" value="Найти">
+        			<input type="submit" name="commit" value="Найти(WM+Y)" onclick="call_in_wm()" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="wm" value="Найти (DB)" onclick="call_in_db()"> 
        			</p>
+            
       		</form>
     	</div>
   	</section> 
@@ -62,24 +90,24 @@
   <section style="margin: auto; margin-top: 20px;">
     <div class="col-dsk-4 col-tab-6 col-mob-12">
     	<div class="result">
-      		<h1>Поиск по wikimapia</h1>
+      		<h1>Поиск (wm+yandex)</h1>
       		 <div class="info_wm"></div>
     	</div>
   	</div> 
     <!--section id=result_wm class="col-dsk-4"-->
-    <div class="col-dsk-4 col-tab-6 col-mob-12">
+    <div class="col-dsk-4 col-tab-6 col-mob-12" style="float:right;">
       <div class="result">
-          <h1>Поиск в DB</h1>
-           <div class="info_wp"></div>
+          <h1>Поиск (DB)</h1>
+           <div class="info_db"></div>
       </div>
     </div> 
     <!--section id=result_wm class="col-dsk-4"-->
-    <div class="col-dsk-4 col-tab-6 col-mob-12">
+    <!--div class="col-dsk-4 col-tab-6 col-mob-12">
       <div class="result">
           <h1>Поиск по контексту (yandex)</h1>
            <div class="info_gs"></div>
       </div>
-    </div>
+    </div-->
   </section>  
 
 </body>
