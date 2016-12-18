@@ -2,37 +2,63 @@
 include_once('db.php');
 include_once('utils.php');
 
+ini_set('log_errors', 'On');
+ini_set('error_log', '/var/www/html/log');
 
 /* Разбор ответа от Wikimapia, поиск в yandex */
 function xml_parser($xml_str) {
  
-  $results = new SimpleXMLElement($xml_str);
-
-  /* count - кол-во результатов поиска в wikimapia */
-  $count = $results->found;
-
-  if(!$count) {
-    $none = "<p>ничего не найдено</p>";
-    return $none;
-  }
-
   $titles = array();
   $urlhtmls = array();
   $results_array = array();
   $url_array = array();
 
+  $results = new SimpleXMLElement($xml_str);
+
+  if(!$results) {
+    logger("XML PARSER ERROR ", "empty WM results" . "\n");
+    show_error("Empty Wikimapia results");
+  }
+
+
+  /* разбор ответа 
+   * формат ответа wm
+   *
+   * <wm>
+   * <debug>
+   * <code></code>
+   * <message></message>
+   * </debug>
+   * </wm>
+   *
+   */
+
+  $error_code = trim($results->debug->code);
+  $error_message = trim($results->debug->message);
+
+  if($error_code && $error_message) {
+    logger("XML PARSER ERROR ", "\terror_code - " . $error_code . "\terror_message - " . $error_message . "\n");
+    show_error("Error in Wikimapia query: " . "\terror_code - " . $error_code . "\terror_message - " . $error_message);
+  }
+
+  /* count - кол-во результатов поиска в wikimapia */
+  $count = $results->found;
+  logger("XML_PARSER count ", $count . "\n"); 
+
   $db_conn = db_init();
+  logger("DB ", "connection init" . "\n");
+
+  global $foundcount;
+  $foundcount = $count;
+
+  $db_conn = db_init();
+  logger("DB ", "connection init" . "\n");
 
   /* подготовка контекста, стемминг */
   $context = str_replace(" ", "&", trim($_POST["context"]));
+  logger("XML_PARSE context", $context . "\n");
 
-  if ($context == null) {
-    echo "<p>context empty: </p>";
-  }
-  else 
-  {
-    $context_info = prepair_context($db_conn, $context);
-  }
+  $context_info = prepare_context($db_conn, $context);
   
   /* разбор результатов с wikimapia, поиск в yandex */
 
@@ -63,18 +89,13 @@ function xml_parser($xml_str) {
       $raw_tags = $results->places->$place->tags->tags_0->title;
 
       /* подготовка тегов - парсинг, стемминг */
-      $tags = prepair_tags($raw_tags);
+      $tags = prepare_tags($raw_tags);
       
       /* запись объектов в бд */
       $point_id = add_place($db_conn, $point);
 
-      if ($point_id == null) {
-        echo "null point id in add_place";
-        die();
-      } 
-      
       /* поиск в yandex - запрос + контекст */
-      $search_result = search_in_yandex(trim($_POST["query"]), $context_info["info"]);
+       $search_result = search_in_yandex(str_replace(" ", "&", trim($_POST["query"])), $context_info["info"]);
 
       $yandex_search_url_sum += $search_result["count"];
       $url_array[] = $search_result["urls"];
@@ -96,11 +117,6 @@ function xml_parser($xml_str) {
 
             /* связь тег-место */
             bind_tag_to_place($db_conn, $tag_id, $point_id);  
-
-            if ($tag_id == null) {
-              echo "null tag id in bind context to tag ";
-              die();
-            }
            
             if ($url_count == null) {
               $url_count = 1;
@@ -121,9 +137,11 @@ function xml_parser($xml_str) {
     $i++;
 
   }
+
+  $query_words = explode(" ", trim($_POST["query"]));
   
   /* поиск результатов в БД, вывод по-возрастанию */
-  $global_result = array("places" => get_places_by_weight($db_conn, $context_info["info"]), "urls" => $url_array);
+  $global_result = array("places" => get_places_by_weight($db_conn, $context_info["info"], $query_words), "urls" => $url_array);
 
   return $global_result;
   

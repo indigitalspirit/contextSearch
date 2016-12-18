@@ -10,6 +10,10 @@
       /* POST-запрос на сервер - поиск на wikimapia, разбор и вывод результата */
       function call_in_wm() {
           var msg   = $('#search').serialize();
+          $('div.log_yandex').empty();
+          $('div.info_wm').empty();
+          $('div.info_db').empty();
+
           $.ajax({
               type: 'POST',
               url: 'action.php',
@@ -17,29 +21,49 @@
 
               success: function(result) {
               
+                try {
                   var data = JSON.parse(result);
-               
-                  if(data.empty > 0) {
-                      alert ('Неверный запрос!'); 
+                  } catch (e) {
+                    $('div.timers').empty();
+                    $('div.timers').append("<h1>ОШИБКА ПАРСИНГА</h1>");
+                    $('div.timers').append(e.message);
+                    $('div.timers').append(e.stack);
+                    $('div.timers').append("<h2>Output</h2><pre>"+result+"</pre>");
+                    return;
+                  }
+                  
+                  if(data.parsed) {
+                    //console.log("parsed: "+data.parsed);
+
+            	      $('div.timers').empty();
+            	      $('div.timers').append(data["timers"]);
+            	      
+                  
+                      var i;
+                      $('div.info_wm').append("<ol>");
+                      for (i = 0; i < data.parsed.places.length; i++) 
+                      {
+                        $('div.info_wm').append("<li>" + data.parsed.places[i]);
+                      }
+                      $('div.info_wm').append("</ol>");
+
+                      //$('div.log_yandex').empty();
+                  
+                      var j;
+                      for (j = 0; j < data.parsed.url.length; j++) 
+                      {
+                        $('div.log_yandex').append(data.parsed.url[j]+"<br><hr>");
+                        console.log("log_yandex: "+data.parsed.url[j]+"<br><hr>");
+
+                      }
+                  }
+                  else if(data.error) 
+                  {
+                    $('div.info_wm').append("Error: "+data.msg);
                   }
                   else 
                   {
-                      $('div.info_wm').append(data["wm_url"]+data.parsed.places[0]+data.parsed.places[1]);
-                      $('div.info_wm').empty();
-                  
-                      var i;
-                      for (i = 0; i < data.parsed.places.length; i++) 
-                      {
-                        $('div.info_wm').append(data.parsed.places[i]);
-                      }
-
-                      $('div.log_yandex').empty();
-                  
-                      var j;
-                      for (j = 0; j < data.parsed.urls.length; j++) 
-                      {
-                        $('div.log_yandex').append(data.parsed.urls[j]+"<br><hr>");
-                      }
+                    $('div.info_wm').append("Internal Error");
                   }
               },
               error:  function(xhr, str) {
@@ -51,6 +75,10 @@
       /* POST-запрос на сервер - поиск в базе данных, вывод результата */
       function call_in_db() {
           var msg   = $('#search').serialize();
+          $('div.log_yandex').empty();
+          $('div.info_wm').empty();
+          $('div.info_db').empty();
+
           $.ajax({
               type: 'POST',
               url: 'action_db.php',
@@ -59,14 +87,16 @@
               success: function(result) {
                 var data = JSON.parse(result);
                 
-                if(data.empty > 0) 
+                if(data.places) 
                 {
-                  alert ('Неверный запрос!'); 
+                  console.log("DB data: "+data.places);
+                  $('div.info_db').html(data.places);
                 }
-                else
+                else if(data.error) 
                 {
-                  $('div.info_db').html(data);
+                  $('div.info_db').append("Error: "+data.msg);
                 }
+
               },
               error:  function(xhr, str){
                 alert('Возникла ошибка: ' + xhr.responseCode);
@@ -87,6 +117,13 @@
             <p>
               <input type="text" name="context" id="context" value="" placeholder="Контекст">
             </p>
+            
+            <p>
+    		Широта: <input type="text" name="latitude" id="latitude" value="59.938630" placeholder="latitude"> 
+            </p>
+            <p>
+    		Долгота: <input type="text" name="longitude" id="longitude" value="30.314130" placeholder="longitude">
+            </p>
         		<p class="submit">
         			<input type="submit" name="commit" value="Найти(WM+Y)" onclick="call_in_wm()" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="wm" value="Найти (DB)" onclick="call_in_db()"> 
        			</p>
@@ -94,19 +131,22 @@
       		</form>
     	</div>
   	</section> 
-
+  	
+  	<section style="margin: auto; margin-top: 20px;">
+  	<div class="timers"></div>
+  	</section>
   	
   <section style="margin: auto; margin-top: 20px;">
     <div class="col-dsk-4 col-tab-6 col-mob-12">
     	<div class="result">
-      		<h1>Поиск (wm+yandex)</h1>
+      		<h1>Поиск: ранги (wm+yandex)</h1>
       		 <div class="info_wm"></div>
     	</div>
   	</div> 
     <section style="margin: auto; margin-top: 20px;">
     <div class="col-dsk-4 col-tab-6 col-mob-12">
       <div class="result">
-          <h1>Поиск (wm+yandex)</h1>
+          <h1>Поиск: лог (wm+yandex)</h1>
            <div class="log_yandex"></div>
       </div>
     </div> 

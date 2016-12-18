@@ -1,0 +1,164 @@
+2016.12.18 18:53:25 Module ACTION : empty context or query
+
+2016.12.18 18:54:19 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="спортивный&магазин"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.18 18:54:19 Module UTILS CONSTRUCTED URL QUERY: спортивный&магазин
+
+2016.12.18 18:54:22 Module XML_PARSER count : 240
+
+2016.12.18 18:54:22 Module DB : connection init
+
+2016.12.18 18:54:22 Module DB : connection init
+
+2016.12.18 18:54:22 Module XML_PARSE context: спорт
+
+2016.12.18 18:54:22 Module PREPARE_CONTEXT stemming_result : спорт
+
+2016.12.18 18:54:22 Module PREPARE_CONTEXT context_info: id -> 28 info -> спорт
+
+2016.12.18 18:54:22 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.18 18:54:22 Module PREPARE_TAGS tag : спортивная
+
+2016.12.18 18:54:22 Module PREPARE_TAGS stemming_result : одежд
+
+2016.12.18 18:54:22 Module PREPARE_TAGS tag : одежда
+
+2016.12.18 18:54:22 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=nastya-pavlova-93&key=03.180579375:33ebf55a7d6898980d6426e16a4eaf72&page=1&query=спортивный&магазин&спорт
+
+2016.12.18 18:54:22 Module PREPARE CONTEXT ERROR code: 33
+
+2016.12.18 18:54:22 Module PREPARE CONTEXT ERROR: 194.85.173.9 is not in this user's list of permitted IP addresses
+
+2016.12.18 18:55:37 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="спортивный&магазин"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.18 18:55:37 Module UTILS CONSTRUCTED URL QUERY: спортивный&магазин
+
+2016.12.18 18:55:40 Module XML_PARSER count : 240
+
+2016.12.18 18:55:40 Module DB : connection init
+
+2016.12.18 18:55:40 Module DB : connection init
+
+2016.12.18 18:55:40 Module XML_PARSE context: спорт
+
+2016.12.18 18:55:40 Module PREPARE_CONTEXT stemming_result : спорт
+
+2016.12.18 18:55:40 Module PREPARE_CONTEXT context_info: id -> 28 info -> спорт
+
+2016.12.18 18:55:40 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.18 18:55:40 Module PREPARE_TAGS tag : спортивная
+
+2016.12.18 18:55:40 Module PREPARE_TAGS stemming_result : одежд
+
+2016.12.18 18:55:40 Module PREPARE_TAGS tag : одежда
+
+2016.12.18 18:55:40 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=nastya-pavlova-93&key=03.180579375:33ebf55a7d6898980d6426e16a4eaf72&page=1&query=спортивный&магазин&спорт
+
+2016.12.18 18:55:40 Module PREPARE CONTEXT ERROR code: 33
+
+2016.12.18 18:55:40 Module PREPARE CONTEXT ERROR: 194.85.173.9 is not in this user's list of permitted IP addresses
+
+2016.12.18 18:59:00 Module ACTION : empty context or query
+
+2016.12.18 18:59:03 Module ACTION : empty context or query
+
+2016.12.18 18:59:17 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="спортивный&магазин"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.18 18:59:17 Module UTILS CONSTRUCTED URL QUERY: спортивный&магазин
+
+2016.12.18 18:59:21 Module XML_PARSER count : 240
+
+2016.12.18 18:59:21 Module DB : connection init
+
+2016.12.18 18:59:21 Module DB : connection init
+
+2016.12.18 18:59:21 Module XML_PARSE context: спорт
+
+2016.12.18 18:59:21 Module PREPARE_CONTEXT stemming_result : спорт
+
+2016.12.18 18:59:21 Module PREPARE_CONTEXT context_info: id -> 28 info -> спорт
+
+2016.12.18 18:59:21 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.18 18:59:21 Module PREPARE_TAGS tag : спортивная
+
+2016.12.18 18:59:21 Module PREPARE_TAGS stemming_result : одежд
+
+2016.12.18 18:59:21 Module PREPARE_TAGS tag : одежда
+
+2016.12.18 18:59:21 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=nastya-pavlova-93&key=03.180579375:33ebf55a7d6898980d6426e16a4eaf72&page=1&query=спортивный&магазин&спорт
+
+2016.12.18 18:59:21 Module PREPARE CONTEXT ERROR code: 33
+
+2016.12.18 18:59:21 Module PREPARE CONTEXT ERROR: 194.85.173.9 is not in this user's list of permitted IP addresses
+
+2016.12.18 19:00:55 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="спортивный&магазин"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.18 19:00:55 Module UTILS CONSTRUCTED URL QUERY: спортивный&магазин
+
+2016.12.18 19:00:58 Module XML_PARSER count : 240
+
+2016.12.18 19:00:58 Module DB : connection init
+
+2016.12.18 19:00:58 Module DB : connection init
+
+2016.12.18 19:00:58 Module XML_PARSE context: спорт
+
+2016.12.18 19:00:58 Module PREPARE_CONTEXT stemming_result : спорт
+
+2016.12.18 19:00:58 Module PREPARE_CONTEXT context_info: id -> 28 info -> спорт
+
+2016.12.18 19:00:58 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.18 19:00:58 Module PREPARE_TAGS tag : спортивная
+
+2016.12.18 19:00:58 Module PREPARE_TAGS stemming_result : одежд
+
+2016.12.18 19:00:58 Module PREPARE_TAGS tag : одежда
+
+2016.12.18 19:00:58 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=nastya-pavlova-93&key=03.180579375:33ebf55a7d6898980d6426e16a4eaf72&page=1&query=спортивный&магазин&спорт
+
+2016.12.18 19:00:58 Module PREPARE CONTEXT ERROR code: 33
+
+2016.12.18 19:00:58 Module PREPARE CONTEXT ERROR: 194.85.173.9 is not in this user's list of permitted IP addresses
+
+2016.12.18 19:55:47 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' GROUP BY places.weight;
+
+2016.12.18 19:55:47 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.18 19:55:58 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остров%' GROUP BY places.weight;
+
+2016.12.18 19:55:58 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.18 19:13:27 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' GROUP BY places.weight;
+
+2016.12.18 19:19:35 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остров%' GROUP BY places.weight;
+
+2016.12.18 19:19:35 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.18 19:19:58 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' GROUP BY places.weight;
+
+2016.12.18 19:22:38 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND places.title LIKE '%остр%' GROUP BY places.weight;
+
+2016.12.18 19:22:38 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.18 19:22:42 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND places.title LIKE '%остр%' GROUP BY places.weight;
+
+2016.12.18 19:22:42 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.18 20:41:18 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%кижи%' OR )
+
+2016.12.18 20:41:18 Module DB get_places_by_weight : Error: <br>0
+
+2016.12.18 20:46:50 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%%' OR )
+
+2016.12.18 20:46:50 Module DB get_places_by_weight : Error: <br>0
+
+2016.12.18 20:49:33 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%кижи%' OR )
+
+2016.12.18 20:49:33 Module DB get_places_by_weight : Error: <br>0
+
+2016.12.18 20:51:23 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%кижи%')
+
