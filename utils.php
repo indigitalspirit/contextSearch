@@ -126,10 +126,10 @@ function search_in_yandex($keyword, $context_info) {
   $url_array = array();
   $final_array = array("count" => "", "url" => "");
 
-  $user = 'nastya-pavlova-93'; // логин
-  //$user = 'seekerk';
-  $key = '03.180579375:33ebf55a7d6898980d6426e16a4eaf72'; // ключ Яндекс.XML
-  //$key = '03.311288933:33a36a310dcd99622e9e7703b347a59d';
+  //$user = 'nastya-pavlova-93'; // логин
+  $user = 'seekerk';
+  //$key = '03.180579375:33ebf55a7d6898980d6426e16a4eaf72'; // ключ Яндекс.XML
+  $key = '03.311288933:33a36a310dcd99622e9e7703b347a59d';
   $url = "https://yandex.com/search/xml?l10n=en&user=" . $user . "&key=" . $key . "&page=1&query=" . $keyword . "&" . $context_info; 
 
   logger("SEARCH IN YANDEX URL", $url . "\n");

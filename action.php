@@ -21,7 +21,7 @@ if((strlen($query) == null) || (strlen($context) == null))
 else 
 
 {
-$starttime = microtime(true);
+    $starttime = microtime(true);
 	// Поиск в wikimapia 
 	$url = construct_url($query, $context, $lat, $lon);
 	$wikimapiatime = microtime(true);

@@ -162,3 +162,3056 @@
 
 2016.12.18 20:51:23 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%кижи%')
 
+2016.12.18 21:07:33 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%кижи%')
+
+2016.12.18 21:20:47 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%киж%')
+
+2016.12.18 21:22:25 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%киж%') GROUP BY places.weight;
+
+2016.12.18 21:22:37 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%киж%') GROUP BY places.weight;
+
+2016.12.18 21:23:31 Module DB get_places_by_weight : QUERY: SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%киж%');
+
+2016.12.18 21:25:05 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%киж%') GROUP BY places.weight;
+
+2016.12.19 06:01:32 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%киж%') GROUP BY places.weight;
+
+2016.12.19 06:01:45 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="кижи"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.19 06:01:45 Module UTILS CONSTRUCTED URL QUERY: кижи
+
+2016.12.19 06:01:46 Module XML_PARSER count : 0
+
+2016.12.19 06:01:46 Module DB : connection init
+
+2016.12.19 06:01:46 Module XML_PARSE context: остров
+
+2016.12.19 06:01:46 Module PREPARE_CONTEXT stemming_result : остр
+
+2016.12.19 06:01:46 Module PREPARE_CONTEXT context_info: id -> 23 info -> остр
+
+2016.12.19 06:01:46 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%остр%' AND (places.title LIKE '%киж%') GROUP BY places.weight;
+
+2016.12.19 05:12:25 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="спортивный&магазин"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.19 05:12:25 Module UTILS CONSTRUCTED URL QUERY: спортивный&магазин
+
+2016.12.19 05:12:29 Module XML_PARSER count : 240
+
+2016.12.19 05:12:29 Module DB : connection init
+
+2016.12.19 05:12:29 Module XML_PARSE context: спорт
+
+2016.12.19 05:12:29 Module PREPARE_CONTEXT stemming_result : спорт
+
+2016.12.19 05:12:29 Module PREPARE_CONTEXT context_info: id -> 28 info -> спорт
+
+2016.12.19 05:12:29 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:29 Module PREPARE_TAGS tag : спортивная
+
+2016.12.19 05:12:29 Module PREPARE_TAGS stemming_result : одежд
+
+2016.12.19 05:12:29 Module PREPARE_TAGS tag : одежда
+
+2016.12.19 05:12:29 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:29 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивн&спорт
+
+2016.12.19 05:12:30 Module DB bind_tag_to_place : Query done
+
+[19-Dec-2016 05:12:30 UTC] PHP Notice:  Undefined variable: url_count in /srv/www/vhosts/web/contextSearch/xml_parser.php on line 118
+2016.12.19 05:12:30 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:30 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=одежд&спорт
+
+2016.12.19 05:12:30 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:30 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:30 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:30 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:30 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:30 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:12:30 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:12:30 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:12:30 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:12:30 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:31 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=тренажёрн&спорт
+
+2016.12.19 05:12:31 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:31 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:31 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=зал&спорт
+
+2016.12.19 05:12:32 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:32 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:32 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:32 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:32 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:32 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:32 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:32 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:32 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=клуб&спорт
+
+2016.12.19 05:12:33 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:33 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:33 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:33 Module PREPARE_TAGS stemming_result : склад
+
+2016.12.19 05:12:33 Module PREPARE_TAGS tag : склад
+
+2016.12.19 05:12:33 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:33 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=склад&спорт
+
+2016.12.19 05:12:33 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:33 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:33 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:33 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:33 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:12:33 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:12:33 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:12:33 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:12:33 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:12:33 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:34 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=сооружен&спорт
+
+2016.12.19 05:12:34 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:34 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:34 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=организац&спорт
+
+2016.12.19 05:12:35 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:35 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:35 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:35 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:12:35 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:12:35 Module PREPARE_TAGS stemming_result : спорттовар
+
+2016.12.19 05:12:35 Module PREPARE_TAGS tag : спорттоваров
+
+2016.12.19 05:12:35 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:35 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=магазин&спорт
+
+2016.12.19 05:12:36 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:36 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:36 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спорттовар&спорт
+
+2016.12.19 05:12:36 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:36 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:36 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:36 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:36 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:36 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:36 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:36 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:37 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:37 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:37 Module PREPARE_TAGS tag : спортивная
+
+2016.12.19 05:12:37 Module PREPARE_TAGS stemming_result : площадк
+
+2016.12.19 05:12:37 Module PREPARE_TAGS tag : площадка
+
+2016.12.19 05:12:37 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:37 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=площадк&спорт
+
+2016.12.19 05:12:37 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:37 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:37 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:37 Module PREPARE_TAGS stemming_result : высш
+
+2016.12.19 05:12:37 Module PREPARE_TAGS tag : высшее
+
+2016.12.19 05:12:37 Module PREPARE_TAGS stemming_result : учебн
+
+2016.12.19 05:12:37 Module PREPARE_TAGS tag : учебное
+
+2016.12.19 05:12:37 Module PREPARE_TAGS stemming_result : заведен
+
+2016.12.19 05:12:37 Module PREPARE_TAGS tag : заведение
+
+2016.12.19 05:12:37 Module PREPARE_TAGS stemming_result : вуз
+
+2016.12.19 05:12:37 Module PREPARE_TAGS tag : вуз
+
+2016.12.19 05:12:37 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:38 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=высш&спорт
+
+2016.12.19 05:12:38 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:38 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:38 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=учебн&спорт
+
+2016.12.19 05:12:39 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:39 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:39 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=заведен&спорт
+
+2016.12.19 05:12:39 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:39 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:39 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=вуз&спорт
+
+2016.12.19 05:12:40 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:40 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:40 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:40 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:40 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:40 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:40 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:40 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:40 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:40 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:40 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:40 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:12:40 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:12:40 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:12:40 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:12:40 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:41 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:41 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:41 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:12:41 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:12:41 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:12:41 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:12:41 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:12:41 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:41 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:41 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:41 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:41 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:42 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:42 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:42 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:12:42 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:12:42 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:12:42 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:12:42 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:12:42 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:42 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:42 Module PREPARE_TAGS stemming_result : казарм
+
+2016.12.19 05:12:42 Module PREPARE_TAGS tag : казарма
+
+2016.12.19 05:12:42 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:42 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=казарм&спорт
+
+2016.12.19 05:12:43 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:43 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:43 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:43 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:43 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:43 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:43 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:43 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:43 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:43 Module PREPARE_TAGS stemming_result : стадион
+
+2016.12.19 05:12:43 Module PREPARE_TAGS tag : стадион
+
+2016.12.19 05:12:43 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:44 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=стадион&спорт
+
+2016.12.19 05:12:44 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:44 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:44 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:44 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:44 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:44 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:44 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:44 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:45 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:45 Module PREPARE_TAGS stemming_result : sports
+
+2016.12.19 05:12:45 Module PREPARE_TAGS tag : sports
+
+2016.12.19 05:12:45 Module PREPARE_TAGS stemming_result : pavilion
+
+2016.12.19 05:12:45 Module PREPARE_TAGS tag : pavilion
+
+2016.12.19 05:12:45 Module PREPARE_TAGS stemming_result : en
+
+2016.12.19 05:12:45 Module PREPARE_TAGS tag : en
+
+2016.12.19 05:12:45 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:45 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=sports&спорт
+
+2016.12.19 05:12:46 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:46 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:46 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=pavilion&спорт
+
+2016.12.19 05:12:46 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:46 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:46 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=en&спорт
+
+2016.12.19 05:12:47 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:47 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:47 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:47 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:12:47 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:12:47 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:47 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:47 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:47 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:12:47 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:12:47 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:12:47 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:12:47 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:12:47 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:48 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:48 Module PREPARE_TAGS stemming_result : конюшн
+
+2016.12.19 05:12:48 Module PREPARE_TAGS tag : конюшня
+
+2016.12.19 05:12:48 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:48 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=конюшн&спорт
+
+2016.12.19 05:12:49 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:49 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:49 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:49 Module PREPARE_TAGS stemming_result : плавательн
+
+2016.12.19 05:12:49 Module PREPARE_TAGS tag : плавательный
+
+2016.12.19 05:12:49 Module PREPARE_TAGS stemming_result : бассейн
+
+2016.12.19 05:12:49 Module PREPARE_TAGS tag : бассейн
+
+2016.12.19 05:12:49 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:49 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=плавательн&спорт
+
+2016.12.19 05:12:50 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:50 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:50 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=бассейн&спорт
+
+2016.12.19 05:12:50 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:50 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:50 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:50 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:12:50 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:12:50 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:51 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:51 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:51 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:51 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:12:51 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:12:51 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:12:51 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:12:51 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:51 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:51 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:12:51 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:12:51 Module PREPARE_TAGS stemming_result : спорттовар
+
+2016.12.19 05:12:51 Module PREPARE_TAGS tag : спорттоваров
+
+2016.12.19 05:12:51 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:52 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:52 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:52 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:52 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:52 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:52 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:52 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:52 Module PREPARE_TAGS stemming_result : государствен
+
+2016.12.19 05:12:52 Module PREPARE_TAGS tag : государственное
+
+2016.12.19 05:12:52 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:12:52 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:12:52 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:52 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=государствен&спорт
+
+2016.12.19 05:12:53 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:53 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:53 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=учрежден&спорт
+
+2016.12.19 05:12:53 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:53 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:53 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:53 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:53 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:53 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:53 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:53 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:54 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:54 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:54 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:54 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:54 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:54 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:54 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:54 Module PREPARE_TAGS stemming_result : баскетбольн
+
+2016.12.19 05:12:54 Module PREPARE_TAGS tag : баскетбольная
+
+2016.12.19 05:12:54 Module PREPARE_TAGS stemming_result : площадк
+
+2016.12.19 05:12:54 Module PREPARE_TAGS tag : площадка
+
+2016.12.19 05:12:54 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:55 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=баскетбольн&спорт
+
+2016.12.19 05:12:55 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:55 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:55 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:55 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:55 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:55 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:12:55 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:12:55 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:12:55 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:12:55 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:56 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:56 Module PREPARE_TAGS stemming_result : здан
+
+2016.12.19 05:12:56 Module PREPARE_TAGS tag : здание
+
+2016.12.19 05:12:56 Module PREPARE_TAGS stemming_result : корпус
+
+2016.12.19 05:12:56 Module PREPARE_TAGS tag : корпус
+
+2016.12.19 05:12:56 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:56 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=здан&спорт
+
+2016.12.19 05:12:56 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:56 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:56 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=корпус&спорт
+
+2016.12.19 05:12:57 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:57 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:57 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:57 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:57 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:57 Module PREPARE_TAGS stemming_result : комплекс
+
+2016.12.19 05:12:57 Module PREPARE_TAGS tag : комплекс
+
+2016.12.19 05:12:57 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:57 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=комплекс&спорт
+
+2016.12.19 05:12:58 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:58 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:58 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:58 Module PREPARE_TAGS stemming_result : административно-офисн
+
+2016.12.19 05:12:58 Module PREPARE_TAGS tag : административно-офисное
+
+2016.12.19 05:12:58 Module PREPARE_TAGS stemming_result : здан
+
+2016.12.19 05:12:58 Module PREPARE_TAGS tag : здание
+
+2016.12.19 05:12:58 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:58 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=административно-офисн&спорт
+
+2016.12.19 05:12:59 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:12:59 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:12:59 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:59 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:59 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:59 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:59 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:59 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:59 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:59 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:59 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:59 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:12:59 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:12:59 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:12:59 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:12:59 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:12:59 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:12:59 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:12:59 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:12:59 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:12:59 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:12:59 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:00 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:00 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:13:00 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:13:00 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:13:00 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:13:00 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:00 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:00 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:13:00 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:13:00 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:13:00 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:13:00 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:13:00 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:13:00 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:01 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:01 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:13:01 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:13:01 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:13:01 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:13:01 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:13:01 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:13:01 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:01 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:01 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:13:01 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:13:01 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:13:01 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:13:01 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:13:01 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:13:01 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:02 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:02 Module PREPARE_TAGS stemming_result : плавательн
+
+2016.12.19 05:13:02 Module PREPARE_TAGS tag : плавательный
+
+2016.12.19 05:13:02 Module PREPARE_TAGS stemming_result : бассейн
+
+2016.12.19 05:13:02 Module PREPARE_TAGS tag : бассейн
+
+2016.12.19 05:13:02 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:02 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:02 Module PREPARE_TAGS stemming_result : фитнес-клуб
+
+2016.12.19 05:13:02 Module PREPARE_TAGS tag : фитнес-клуб
+
+2016.12.19 05:13:02 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:03 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=фитнес-клуб&спорт
+
+2016.12.19 05:13:03 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:13:03 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:13:03 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:03 Module PREPARE_TAGS stemming_result : детск
+
+2016.12.19 05:13:03 Module PREPARE_TAGS tag : детское
+
+2016.12.19 05:13:03 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:13:03 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:13:03 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:13:03 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:13:03 Module PREPARE_TAGS stemming_result : -
+
+2016.12.19 05:13:03 Module PREPARE_TAGS tag : -
+
+2016.12.19 05:13:03 Module PREPARE_TAGS stemming_result : замен
+
+2016.12.19 05:13:03 Module PREPARE_TAGS tag : замените
+
+2016.12.19 05:13:03 Module PREPARE_TAGS stemming_result : категор
+
+2016.12.19 05:13:03 Module PREPARE_TAGS tag : категорию
+
+2016.12.19 05:13:03 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:03 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=детск&спорт
+
+2016.12.19 05:13:04 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:13:04 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:13:04 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=-&спорт
+
+2016.12.19 05:13:04 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:13:04 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:13:04 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=замен&спорт
+
+2016.12.19 05:13:05 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:13:05 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:13:05 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=категор&спорт
+
+2016.12.19 05:13:05 Module DB bind_tag_to_place : Query done
+
+2016.12.19 05:13:05 Module DB bind_tag_to_context : Query done
+
+2016.12.19 05:13:05 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:05 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:13:05 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:13:05 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:13:05 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:13:05 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:13:05 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:13:05 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:06 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:06 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:13:06 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:13:06 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:13:06 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:13:06 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:13:06 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:13:06 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:06 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:06 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:13:06 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:13:06 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:13:06 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:13:06 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:13:06 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:13:06 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:07 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:13:07 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:07 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : детск
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : детское
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : -
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : -
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : замен
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : замените
+
+2016.12.19 05:13:07 Module PREPARE_TAGS stemming_result : категор
+
+2016.12.19 05:13:07 Module PREPARE_TAGS tag : категорию
+
+2016.12.19 05:13:07 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:13:07 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:13:07 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:13:23 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:14:35 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:22:10 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat=59.938630 AND places.lon=30.314130 AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:22:10 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.19 05:24:28 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat='59.938630' AND places.lon='30.314130' AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:24:28 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.19 05:24:33 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="спортивный&магазин"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.19 05:24:33 Module UTILS CONSTRUCTED URL QUERY: спортивный&магазин
+
+2016.12.19 05:24:36 Module XML_PARSER count : 240
+
+2016.12.19 05:24:36 Module DB : connection init
+
+2016.12.19 05:24:36 Module XML_PARSE context: спорт
+
+2016.12.19 05:24:36 Module PREPARE_CONTEXT stemming_result : спорт
+
+2016.12.19 05:24:36 Module PREPARE_CONTEXT context_info: id -> 28 info -> спорт
+
+2016.12.19 05:24:36 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:36 Module PREPARE_TAGS tag : спортивная
+
+2016.12.19 05:24:36 Module PREPARE_TAGS stemming_result : одежд
+
+2016.12.19 05:24:36 Module PREPARE_TAGS tag : одежда
+
+2016.12.19 05:24:36 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:36 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:36 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:36 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:36 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:36 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:36 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:36 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:36 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:37 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:37 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:37 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:37 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:37 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:37 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:37 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:37 Module PREPARE_TAGS stemming_result : склад
+
+2016.12.19 05:24:37 Module PREPARE_TAGS tag : склад
+
+2016.12.19 05:24:37 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:38 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:38 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:38 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:24:38 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:24:38 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:24:38 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:24:38 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:24:38 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:38 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:38 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:24:38 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:24:38 Module PREPARE_TAGS stemming_result : спорттовар
+
+2016.12.19 05:24:38 Module PREPARE_TAGS tag : спорттоваров
+
+2016.12.19 05:24:38 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:39 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:39 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:39 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:39 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:39 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:39 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:39 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:39 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:39 Module PREPARE_TAGS tag : спортивная
+
+2016.12.19 05:24:39 Module PREPARE_TAGS stemming_result : площадк
+
+2016.12.19 05:24:39 Module PREPARE_TAGS tag : площадка
+
+2016.12.19 05:24:39 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:39 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:39 Module PREPARE_TAGS stemming_result : высш
+
+2016.12.19 05:24:39 Module PREPARE_TAGS tag : высшее
+
+2016.12.19 05:24:39 Module PREPARE_TAGS stemming_result : учебн
+
+2016.12.19 05:24:39 Module PREPARE_TAGS tag : учебное
+
+2016.12.19 05:24:39 Module PREPARE_TAGS stemming_result : заведен
+
+2016.12.19 05:24:39 Module PREPARE_TAGS tag : заведение
+
+2016.12.19 05:24:39 Module PREPARE_TAGS stemming_result : вуз
+
+2016.12.19 05:24:39 Module PREPARE_TAGS tag : вуз
+
+2016.12.19 05:24:39 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:40 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:40 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:40 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:40 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:40 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:40 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:40 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:40 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:40 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:40 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:40 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:40 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:40 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:40 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:40 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:40 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:40 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:24:40 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:24:40 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:24:40 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:24:40 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:24:40 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:41 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:41 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:41 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:41 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:41 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:41 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:41 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:24:41 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:24:41 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:24:41 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:24:41 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:24:41 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:42 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:42 Module PREPARE_TAGS stemming_result : казарм
+
+2016.12.19 05:24:42 Module PREPARE_TAGS tag : казарма
+
+2016.12.19 05:24:42 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:42 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:42 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:42 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:42 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:42 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:42 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:42 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:42 Module PREPARE_TAGS stemming_result : стадион
+
+2016.12.19 05:24:42 Module PREPARE_TAGS tag : стадион
+
+2016.12.19 05:24:42 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:43 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:43 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:43 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:43 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:43 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:43 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:43 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:43 Module PREPARE_TAGS stemming_result : sports
+
+2016.12.19 05:24:43 Module PREPARE_TAGS tag : sports
+
+2016.12.19 05:24:43 Module PREPARE_TAGS stemming_result : pavilion
+
+2016.12.19 05:24:43 Module PREPARE_TAGS tag : pavilion
+
+2016.12.19 05:24:43 Module PREPARE_TAGS stemming_result : en
+
+2016.12.19 05:24:43 Module PREPARE_TAGS tag : en
+
+2016.12.19 05:24:43 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:43 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:43 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:24:43 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:24:43 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:44 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:44 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:44 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:24:44 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:24:44 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:24:44 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:24:44 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:24:44 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:44 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:44 Module PREPARE_TAGS stemming_result : конюшн
+
+2016.12.19 05:24:44 Module PREPARE_TAGS tag : конюшня
+
+2016.12.19 05:24:44 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:45 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:45 Module PREPARE_TAGS stemming_result : плавательн
+
+2016.12.19 05:24:45 Module PREPARE_TAGS tag : плавательный
+
+2016.12.19 05:24:45 Module PREPARE_TAGS stemming_result : бассейн
+
+2016.12.19 05:24:45 Module PREPARE_TAGS tag : бассейн
+
+2016.12.19 05:24:45 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:45 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:45 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:24:45 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:24:45 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:45 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:45 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:45 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:45 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:45 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:45 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:45 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:45 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:46 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:46 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:24:46 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:24:46 Module PREPARE_TAGS stemming_result : спорттовар
+
+2016.12.19 05:24:46 Module PREPARE_TAGS tag : спорттоваров
+
+2016.12.19 05:24:46 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:46 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:46 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:46 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:46 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:46 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:46 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:47 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:47 Module PREPARE_TAGS stemming_result : государствен
+
+2016.12.19 05:24:47 Module PREPARE_TAGS tag : государственное
+
+2016.12.19 05:24:47 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:24:47 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:24:47 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:47 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:47 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:47 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:47 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:47 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:47 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:48 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:48 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:48 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:48 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:48 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:48 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:48 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:48 Module PREPARE_TAGS stemming_result : баскетбольн
+
+2016.12.19 05:24:48 Module PREPARE_TAGS tag : баскетбольная
+
+2016.12.19 05:24:48 Module PREPARE_TAGS stemming_result : площадк
+
+2016.12.19 05:24:48 Module PREPARE_TAGS tag : площадка
+
+2016.12.19 05:24:48 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:48 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:48 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:48 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:48 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:48 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:48 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:48 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:48 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:49 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:49 Module PREPARE_TAGS stemming_result : здан
+
+2016.12.19 05:24:49 Module PREPARE_TAGS tag : здание
+
+2016.12.19 05:24:49 Module PREPARE_TAGS stemming_result : корпус
+
+2016.12.19 05:24:49 Module PREPARE_TAGS tag : корпус
+
+2016.12.19 05:24:49 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:49 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:49 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:49 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:49 Module PREPARE_TAGS stemming_result : комплекс
+
+2016.12.19 05:24:49 Module PREPARE_TAGS tag : комплекс
+
+2016.12.19 05:24:49 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:50 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:50 Module PREPARE_TAGS stemming_result : административно-офисн
+
+2016.12.19 05:24:50 Module PREPARE_TAGS tag : административно-офисное
+
+2016.12.19 05:24:50 Module PREPARE_TAGS stemming_result : здан
+
+2016.12.19 05:24:50 Module PREPARE_TAGS tag : здание
+
+2016.12.19 05:24:50 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:50 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:50 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:50 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:50 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:50 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:50 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:50 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:50 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:50 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:50 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:50 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:50 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:51 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:51 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:51 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:51 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:51 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:51 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:51 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:51 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:51 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:51 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:51 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:51 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:24:51 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:24:51 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:51 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:51 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:51 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:51 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:51 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:51 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:51 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:51 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:52 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:52 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:52 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:52 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:52 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:52 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:52 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:52 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:52 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:52 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:52 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:52 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:52 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:52 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:52 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:52 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:53 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:53 Module PREPARE_TAGS stemming_result : плавательн
+
+2016.12.19 05:24:53 Module PREPARE_TAGS tag : плавательный
+
+2016.12.19 05:24:53 Module PREPARE_TAGS stemming_result : бассейн
+
+2016.12.19 05:24:53 Module PREPARE_TAGS tag : бассейн
+
+2016.12.19 05:24:53 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:53 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:53 Module PREPARE_TAGS stemming_result : фитнес-клуб
+
+2016.12.19 05:24:53 Module PREPARE_TAGS tag : фитнес-клуб
+
+2016.12.19 05:24:53 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:54 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : детск
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : детское
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : -
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : -
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : замен
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : замените
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : категор
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : категорию
+
+2016.12.19 05:24:54 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:54 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:54 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:54 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:54 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:55 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:55 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:55 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:55 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:55 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:24:55 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:24:55 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:24:55 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:56 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:56 Module PREPARE_TAGS stemming_result : детск
+
+2016.12.19 05:24:56 Module PREPARE_TAGS tag : детское
+
+2016.12.19 05:24:56 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:24:56 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:24:56 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:24:56 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:24:56 Module PREPARE_TAGS stemming_result : -
+
+2016.12.19 05:24:56 Module PREPARE_TAGS tag : -
+
+2016.12.19 05:24:56 Module PREPARE_TAGS stemming_result : замен
+
+2016.12.19 05:24:56 Module PREPARE_TAGS tag : замените
+
+2016.12.19 05:24:56 Module PREPARE_TAGS stemming_result : категор
+
+2016.12.19 05:24:56 Module PREPARE_TAGS tag : категорию
+
+2016.12.19 05:24:56 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:24:56 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:24:56 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat='59.938630' AND places.lon='30.314130' AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:24:56 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.19 05:24:59 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat='59.938630' AND places.lon='30.314130' AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:24:59 Module DB get_places_by_weight : Ничего не найдено
+
+2016.12.19 05:37:09 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="спортивный&магазин"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.19 05:37:09 Module UTILS CONSTRUCTED URL QUERY: спортивный&магазин
+
+2016.12.19 05:37:12 Module XML_PARSER count : 240
+
+2016.12.19 05:37:12 Module DB : connection init
+
+2016.12.19 05:37:12 Module XML_PARSE context: спорт
+
+2016.12.19 05:37:12 Module PREPARE_CONTEXT stemming_result : спорт
+
+2016.12.19 05:37:12 Module PREPARE_CONTEXT context_info: id -> 28 info -> спорт
+
+2016.12.19 05:37:12 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:12 Module PREPARE_TAGS tag : спортивная
+
+2016.12.19 05:37:12 Module PREPARE_TAGS stemming_result : одежд
+
+2016.12.19 05:37:12 Module PREPARE_TAGS tag : одежда
+
+2016.12.19 05:37:12 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:13 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:13 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:13 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:13 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:13 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:13 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:13 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:13 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:13 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:13 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:13 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:13 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:13 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:13 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:14 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:14 Module PREPARE_TAGS stemming_result : склад
+
+2016.12.19 05:37:14 Module PREPARE_TAGS tag : склад
+
+2016.12.19 05:37:14 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:14 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:14 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:14 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:37:14 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:37:14 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:37:14 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:37:14 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:37:14 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:15 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:15 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:37:15 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:37:15 Module PREPARE_TAGS stemming_result : спорттовар
+
+2016.12.19 05:37:15 Module PREPARE_TAGS tag : спорттоваров
+
+2016.12.19 05:37:15 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:15 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:15 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:15 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:15 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:15 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:15 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:15 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:15 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:15 Module PREPARE_TAGS tag : спортивная
+
+2016.12.19 05:37:15 Module PREPARE_TAGS stemming_result : площадк
+
+2016.12.19 05:37:15 Module PREPARE_TAGS tag : площадка
+
+2016.12.19 05:37:15 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:16 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:16 Module PREPARE_TAGS stemming_result : высш
+
+2016.12.19 05:37:16 Module PREPARE_TAGS tag : высшее
+
+2016.12.19 05:37:16 Module PREPARE_TAGS stemming_result : учебн
+
+2016.12.19 05:37:16 Module PREPARE_TAGS tag : учебное
+
+2016.12.19 05:37:16 Module PREPARE_TAGS stemming_result : заведен
+
+2016.12.19 05:37:16 Module PREPARE_TAGS tag : заведение
+
+2016.12.19 05:37:16 Module PREPARE_TAGS stemming_result : вуз
+
+2016.12.19 05:37:16 Module PREPARE_TAGS tag : вуз
+
+2016.12.19 05:37:16 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:16 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:16 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:16 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:16 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:16 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:16 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:17 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:17 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:17 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:17 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:17 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:17 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:17 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:17 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:17 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:17 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:17 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:37:17 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:37:17 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:37:17 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:37:17 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:37:17 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:17 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:17 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:17 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:17 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:18 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:18 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:18 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:37:18 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:37:18 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:37:18 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:37:18 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:37:18 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:18 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:18 Module PREPARE_TAGS stemming_result : казарм
+
+2016.12.19 05:37:18 Module PREPARE_TAGS tag : казарма
+
+2016.12.19 05:37:18 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:18 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:18 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:18 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:18 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:18 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:18 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:19 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:19 Module PREPARE_TAGS stemming_result : стадион
+
+2016.12.19 05:37:19 Module PREPARE_TAGS tag : стадион
+
+2016.12.19 05:37:19 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:19 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:19 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:19 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:19 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:19 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:19 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:19 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:19 Module PREPARE_TAGS stemming_result : sports
+
+2016.12.19 05:37:19 Module PREPARE_TAGS tag : sports
+
+2016.12.19 05:37:19 Module PREPARE_TAGS stemming_result : pavilion
+
+2016.12.19 05:37:19 Module PREPARE_TAGS tag : pavilion
+
+2016.12.19 05:37:19 Module PREPARE_TAGS stemming_result : en
+
+2016.12.19 05:37:19 Module PREPARE_TAGS tag : en
+
+2016.12.19 05:37:19 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:20 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:20 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:37:20 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:37:20 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:20 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:20 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:20 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:37:20 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:37:20 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:37:20 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:37:20 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:37:20 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:21 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:21 Module PREPARE_TAGS stemming_result : конюшн
+
+2016.12.19 05:37:21 Module PREPARE_TAGS tag : конюшня
+
+2016.12.19 05:37:21 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:21 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:21 Module PREPARE_TAGS stemming_result : плавательн
+
+2016.12.19 05:37:21 Module PREPARE_TAGS tag : плавательный
+
+2016.12.19 05:37:21 Module PREPARE_TAGS stemming_result : бассейн
+
+2016.12.19 05:37:21 Module PREPARE_TAGS tag : бассейн
+
+2016.12.19 05:37:21 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:21 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:21 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:37:21 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:37:21 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:22 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:22 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:22 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:22 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:22 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:22 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:22 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:22 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:22 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:22 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:37:22 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:37:22 Module PREPARE_TAGS stemming_result : спорттовар
+
+2016.12.19 05:37:22 Module PREPARE_TAGS tag : спорттоваров
+
+2016.12.19 05:37:22 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:23 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:23 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:23 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:23 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:23 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:23 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:23 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:23 Module PREPARE_TAGS stemming_result : государствен
+
+2016.12.19 05:37:23 Module PREPARE_TAGS tag : государственное
+
+2016.12.19 05:37:23 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:37:23 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:37:23 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:23 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:23 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:23 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:23 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:23 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:23 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:24 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:24 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:24 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:24 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:24 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:24 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:24 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:24 Module PREPARE_TAGS stemming_result : баскетбольн
+
+2016.12.19 05:37:24 Module PREPARE_TAGS tag : баскетбольная
+
+2016.12.19 05:37:24 Module PREPARE_TAGS stemming_result : площадк
+
+2016.12.19 05:37:24 Module PREPARE_TAGS tag : площадка
+
+2016.12.19 05:37:24 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:25 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:25 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:25 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:25 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:25 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:25 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:25 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:25 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:25 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:25 Module PREPARE_TAGS stemming_result : здан
+
+2016.12.19 05:37:25 Module PREPARE_TAGS tag : здание
+
+2016.12.19 05:37:25 Module PREPARE_TAGS stemming_result : корпус
+
+2016.12.19 05:37:25 Module PREPARE_TAGS tag : корпус
+
+2016.12.19 05:37:25 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:26 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:26 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:26 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:26 Module PREPARE_TAGS stemming_result : комплекс
+
+2016.12.19 05:37:26 Module PREPARE_TAGS tag : комплекс
+
+2016.12.19 05:37:26 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:26 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:26 Module PREPARE_TAGS stemming_result : административно-офисн
+
+2016.12.19 05:37:26 Module PREPARE_TAGS tag : административно-офисное
+
+2016.12.19 05:37:26 Module PREPARE_TAGS stemming_result : здан
+
+2016.12.19 05:37:26 Module PREPARE_TAGS tag : здание
+
+2016.12.19 05:37:26 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:27 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:27 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:27 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:27 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:27 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:27 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:27 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:27 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:27 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:27 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:27 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:27 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:28 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:28 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:28 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:28 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:28 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:28 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:28 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:28 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:28 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:28 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:28 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:28 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:37:28 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:37:28 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:28 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:28 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:28 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:28 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:28 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:28 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:28 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:28 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:29 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:29 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:29 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:29 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:29 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:29 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:29 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:29 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:29 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:29 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:29 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:29 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:29 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:29 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:29 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:29 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:30 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : плавательн
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : плавательный
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : бассейн
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : бассейн
+
+2016.12.19 05:37:30 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:30 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : фитнес-клуб
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : фитнес-клуб
+
+2016.12.19 05:37:30 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:30 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : детск
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : детское
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : -
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : -
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : замен
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : замените
+
+2016.12.19 05:37:30 Module PREPARE_TAGS stemming_result : категор
+
+2016.12.19 05:37:30 Module PREPARE_TAGS tag : категорию
+
+2016.12.19 05:37:30 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:31 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:31 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:31 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:31 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:31 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:31 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:31 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:31 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:31 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:31 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:31 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:31 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:31 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:31 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:31 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:31 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:32 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:32 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:32 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:37:32 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:32 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : детск
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : детское
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : -
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : -
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : замен
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : замените
+
+2016.12.19 05:37:32 Module PREPARE_TAGS stemming_result : категор
+
+2016.12.19 05:37:32 Module PREPARE_TAGS tag : категорию
+
+2016.12.19 05:37:32 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:37:33 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:37:33 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:37:43 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+[19-Dec-2016 05:44:35 UTC] PHP Notice:  Array to string conversion in /srv/www/vhosts/web/contextSearch/db.php on line 245
+[19-Dec-2016 05:44:35 UTC] PHP Notice:  Array to string conversion in /srv/www/vhosts/web/contextSearch/db.php on line 245
+2016.12.19 05:44:35 Module DB get_places_by_weight : Lat: ArrayLon: Array
+
+2016.12.19 05:44:35 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat='59' AND places.lon='30' AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:44:35 Module DB get_places_by_weight : Ничего не найдено
+
+[19-Dec-2016 05:46:40 UTC] PHP Notice:  Array to string conversion in /srv/www/vhosts/web/contextSearch/db.php on line 245
+[19-Dec-2016 05:46:40 UTC] PHP Notice:  Array to string conversion in /srv/www/vhosts/web/contextSearch/db.php on line 245
+2016.12.19 05:46:40 Module DB get_places_by_weight : Lat: ArrayLon: Array
+
+2016.12.19 05:46:40 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat LIKE '%59%' AND places.lon LIKE '%30%' AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+2016.12.19 05:46:46 Module UTILS CONSTRUCTED URL : http://api.wikimapia.org/?key=030D67E2-67AE3D75-1F4A5A13-ECBA5547-927E8E30-7F219FEC-576EAEF1-531252A1&function=place.search&q="спортивный&магазин"&lat=59.938630&lon=30.314130&format=xml&language=ru&page=1&count=50&distance=10000
+
+2016.12.19 05:46:46 Module UTILS CONSTRUCTED URL QUERY: спортивный&магазин
+
+2016.12.19 05:46:50 Module XML_PARSER count : 240
+
+2016.12.19 05:46:50 Module DB : connection init
+
+2016.12.19 05:46:50 Module XML_PARSE context: спорт
+
+2016.12.19 05:46:50 Module PREPARE_CONTEXT stemming_result : спорт
+
+2016.12.19 05:46:50 Module PREPARE_CONTEXT context_info: id -> 28 info -> спорт
+
+2016.12.19 05:46:50 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:50 Module PREPARE_TAGS tag : спортивная
+
+2016.12.19 05:46:50 Module PREPARE_TAGS stemming_result : одежд
+
+2016.12.19 05:46:50 Module PREPARE_TAGS tag : одежда
+
+2016.12.19 05:46:50 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:50 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:50 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:50 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:46:50 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:46:50 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:46:50 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:46:50 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:46:50 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:51 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:51 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:51 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:46:51 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:46:51 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:46:51 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:51 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:51 Module PREPARE_TAGS stemming_result : склад
+
+2016.12.19 05:46:51 Module PREPARE_TAGS tag : склад
+
+2016.12.19 05:46:51 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:52 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:52 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:52 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:46:52 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:46:52 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:46:52 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:46:52 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:46:52 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:52 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:52 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:46:52 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:46:52 Module PREPARE_TAGS stemming_result : спорттовар
+
+2016.12.19 05:46:52 Module PREPARE_TAGS tag : спорттоваров
+
+2016.12.19 05:46:52 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:52 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:52 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:52 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:46:52 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:46:52 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:46:52 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:53 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:53 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:53 Module PREPARE_TAGS tag : спортивная
+
+2016.12.19 05:46:53 Module PREPARE_TAGS stemming_result : площадк
+
+2016.12.19 05:46:53 Module PREPARE_TAGS tag : площадка
+
+2016.12.19 05:46:53 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:53 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:53 Module PREPARE_TAGS stemming_result : высш
+
+2016.12.19 05:46:53 Module PREPARE_TAGS tag : высшее
+
+2016.12.19 05:46:53 Module PREPARE_TAGS stemming_result : учебн
+
+2016.12.19 05:46:53 Module PREPARE_TAGS tag : учебное
+
+2016.12.19 05:46:53 Module PREPARE_TAGS stemming_result : заведен
+
+2016.12.19 05:46:53 Module PREPARE_TAGS tag : заведение
+
+2016.12.19 05:46:53 Module PREPARE_TAGS stemming_result : вуз
+
+2016.12.19 05:46:53 Module PREPARE_TAGS tag : вуз
+
+2016.12.19 05:46:53 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:54 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:54 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:54 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:46:54 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:46:54 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:46:54 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:54 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:54 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:54 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:46:54 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:46:54 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:46:54 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:46:54 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:46:54 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:55 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:55 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:55 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:46:55 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:46:55 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:46:55 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:46:55 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:46:55 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:55 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:55 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:46:55 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:46:55 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:55 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:55 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:55 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:46:55 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:46:55 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:46:55 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:46:55 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:46:55 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:56 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:56 Module PREPARE_TAGS stemming_result : казарм
+
+2016.12.19 05:46:56 Module PREPARE_TAGS tag : казарма
+
+2016.12.19 05:46:56 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:56 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:56 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:56 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:46:56 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:46:56 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:46:56 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:57 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:57 Module PREPARE_TAGS stemming_result : стадион
+
+2016.12.19 05:46:57 Module PREPARE_TAGS tag : стадион
+
+2016.12.19 05:46:57 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:57 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:57 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:57 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:46:57 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:46:57 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:46:57 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:58 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:58 Module PREPARE_TAGS stemming_result : sports
+
+2016.12.19 05:46:58 Module PREPARE_TAGS tag : sports
+
+2016.12.19 05:46:58 Module PREPARE_TAGS stemming_result : pavilion
+
+2016.12.19 05:46:58 Module PREPARE_TAGS tag : pavilion
+
+2016.12.19 05:46:58 Module PREPARE_TAGS stemming_result : en
+
+2016.12.19 05:46:58 Module PREPARE_TAGS tag : en
+
+2016.12.19 05:46:58 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:58 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:58 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:46:58 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:46:58 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:58 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:58 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:46:58 Module PREPARE_TAGS tag : спортивное
+
+2016.12.19 05:46:58 Module PREPARE_TAGS stemming_result : сооружен
+
+2016.12.19 05:46:58 Module PREPARE_TAGS tag : сооружение
+
+2016.12.19 05:46:58 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:46:58 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:46:58 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:59 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:59 Module PREPARE_TAGS stemming_result : конюшн
+
+2016.12.19 05:46:59 Module PREPARE_TAGS tag : конюшня
+
+2016.12.19 05:46:59 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:59 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:59 Module PREPARE_TAGS stemming_result : плавательн
+
+2016.12.19 05:46:59 Module PREPARE_TAGS tag : плавательный
+
+2016.12.19 05:46:59 Module PREPARE_TAGS stemming_result : бассейн
+
+2016.12.19 05:46:59 Module PREPARE_TAGS tag : бассейн
+
+2016.12.19 05:46:59 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:46:59 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:46:59 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:46:59 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:46:59 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:00 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:00 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:00 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:00 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:00 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:00 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:00 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:00 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:00 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:00 Module PREPARE_TAGS stemming_result : магазин
+
+2016.12.19 05:47:00 Module PREPARE_TAGS tag : магазин
+
+2016.12.19 05:47:00 Module PREPARE_TAGS stemming_result : спорттовар
+
+2016.12.19 05:47:00 Module PREPARE_TAGS tag : спорттоваров
+
+2016.12.19 05:47:00 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:01 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:01 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:01 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:01 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:47:01 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:47:01 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:01 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:01 Module PREPARE_TAGS stemming_result : государствен
+
+2016.12.19 05:47:01 Module PREPARE_TAGS tag : государственное
+
+2016.12.19 05:47:01 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:47:01 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:47:01 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:01 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:01 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:01 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:01 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:47:01 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:47:01 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:02 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:02 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:02 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:02 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:47:02 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:47:02 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:02 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:02 Module PREPARE_TAGS stemming_result : баскетбольн
+
+2016.12.19 05:47:02 Module PREPARE_TAGS tag : баскетбольная
+
+2016.12.19 05:47:02 Module PREPARE_TAGS stemming_result : площадк
+
+2016.12.19 05:47:02 Module PREPARE_TAGS tag : площадка
+
+2016.12.19 05:47:02 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:03 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:03 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:03 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:03 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:03 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:03 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:03 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:03 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:03 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:03 Module PREPARE_TAGS stemming_result : здан
+
+2016.12.19 05:47:03 Module PREPARE_TAGS tag : здание
+
+2016.12.19 05:47:03 Module PREPARE_TAGS stemming_result : корпус
+
+2016.12.19 05:47:03 Module PREPARE_TAGS tag : корпус
+
+2016.12.19 05:47:03 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:03 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:03 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:03 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:03 Module PREPARE_TAGS stemming_result : комплекс
+
+2016.12.19 05:47:03 Module PREPARE_TAGS tag : комплекс
+
+2016.12.19 05:47:03 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:04 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:04 Module PREPARE_TAGS stemming_result : административно-офисн
+
+2016.12.19 05:47:04 Module PREPARE_TAGS tag : административно-офисное
+
+2016.12.19 05:47:04 Module PREPARE_TAGS stemming_result : здан
+
+2016.12.19 05:47:04 Module PREPARE_TAGS tag : здание
+
+2016.12.19 05:47:04 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:04 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:04 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:04 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:04 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:47:04 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:47:04 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:05 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:05 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:05 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:05 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:47:05 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:47:05 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:05 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:05 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:05 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:05 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:05 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:05 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:05 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:05 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:05 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:05 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:05 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:05 Module PREPARE_TAGS stemming_result : клуб
+
+2016.12.19 05:47:05 Module PREPARE_TAGS tag : клуб
+
+2016.12.19 05:47:05 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:06 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:06 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:06 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:06 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:06 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:06 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:06 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:06 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:07 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:07 Module PREPARE_TAGS stemming_result : плавательн
+
+2016.12.19 05:47:07 Module PREPARE_TAGS tag : плавательный
+
+2016.12.19 05:47:07 Module PREPARE_TAGS stemming_result : бассейн
+
+2016.12.19 05:47:07 Module PREPARE_TAGS tag : бассейн
+
+2016.12.19 05:47:07 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:07 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:07 Module PREPARE_TAGS stemming_result : фитнес-клуб
+
+2016.12.19 05:47:07 Module PREPARE_TAGS tag : фитнес-клуб
+
+2016.12.19 05:47:07 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:08 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : детск
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : детское
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : -
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : -
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : замен
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : замените
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : категор
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : категорию
+
+2016.12.19 05:47:08 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:08 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:08 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:08 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:08 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:09 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:09 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:09 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:09 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:09 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : спортивн
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : спортивный
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : тренажёрн
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : тренажёрный
+
+2016.12.19 05:47:09 Module PREPARE_TAGS stemming_result : зал
+
+2016.12.19 05:47:09 Module PREPARE_TAGS tag : зал
+
+2016.12.19 05:47:09 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:10 Module DB add_sum_to_place : Query done
+
+2016.12.19 05:47:10 Module PREPARE_TAGS stemming_result : детск
+
+2016.12.19 05:47:10 Module PREPARE_TAGS tag : детское
+
+2016.12.19 05:47:10 Module PREPARE_TAGS stemming_result : учрежден
+
+2016.12.19 05:47:10 Module PREPARE_TAGS tag : учреждение
+
+2016.12.19 05:47:10 Module PREPARE_TAGS stemming_result : организац
+
+2016.12.19 05:47:10 Module PREPARE_TAGS tag : организация
+
+2016.12.19 05:47:10 Module PREPARE_TAGS stemming_result : -
+
+2016.12.19 05:47:10 Module PREPARE_TAGS tag : -
+
+2016.12.19 05:47:10 Module PREPARE_TAGS stemming_result : замен
+
+2016.12.19 05:47:10 Module PREPARE_TAGS tag : замените
+
+2016.12.19 05:47:10 Module PREPARE_TAGS stemming_result : категор
+
+2016.12.19 05:47:10 Module PREPARE_TAGS tag : категорию
+
+2016.12.19 05:47:10 Module SEARCH IN YANDEX URL: https://yandex.com/search/xml?l10n=en&user=seekerk&key=03.311288933:33a36a310dcd99622e9e7703b347a59d&page=1&query=спортивный&магазин&спорт
+
+2016.12.19 05:47:10 Module DB add_sum_to_place : Query done
+
+[19-Dec-2016 05:47:10 UTC] PHP Notice:  Array to string conversion in /srv/www/vhosts/web/contextSearch/db.php on line 245
+[19-Dec-2016 05:47:10 UTC] PHP Notice:  Array to string conversion in /srv/www/vhosts/web/contextSearch/db.php on line 245
+2016.12.19 05:47:10 Module DB get_places_by_weight : Lat: ArrayLon: Array
+
+2016.12.19 05:47:10 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat LIKE '%59%' AND places.lon LIKE '%30%' AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+
+[19-Dec-2016 05:47:26 UTC] PHP Notice:  Array to string conversion in /srv/www/vhosts/web/contextSearch/db.php on line 245
+[19-Dec-2016 05:47:26 UTC] PHP Notice:  Array to string conversion in /srv/www/vhosts/web/contextSearch/db.php on line 245
+2016.12.19 05:47:26 Module DB get_places_by_weight : Lat: ArrayLon: Array
+
+2016.12.19 05:47:26 Module DB get_places_by_weight : QUERY: SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat LIKE '%59%' AND places.lon LIKE '%30%' AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%спорт%' AND (places.title LIKE '%спортивн%' OR places.title LIKE '%магазин%') GROUP BY places.weight;
+

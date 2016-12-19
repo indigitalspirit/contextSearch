@@ -3,7 +3,7 @@ include_once('db.php');
 include_once('utils.php');
 
 ini_set('log_errors', 'On');
-ini_set('error_log', '/var/www/html/log');
+ini_set('error_log', '/srv/www/vhosts/web/contextSearch/log');
 
 /* Разбор ответа от Wikimapia, поиск в yandex */
 function xml_parser($xml_str) {
@@ -51,9 +51,6 @@ function xml_parser($xml_str) {
   global $foundcount;
   $foundcount = $count;
 
-  $db_conn = db_init();
-  logger("DB ", "connection init" . "\n");
-
   /* подготовка контекста, стемминг */
   $context = str_replace(" ", "&", trim($_POST["context"]));
   logger("XML_PARSE context", $context . "\n");
@@ -98,7 +95,7 @@ function xml_parser($xml_str) {
        $search_result = search_in_yandex(str_replace(" ", "&", trim($_POST["query"])), $context_info["info"]);
 
       $yandex_search_url_sum += $search_result["count"];
-      $url_array[] = $search_result["urls"];
+      $url_array[] = $search_result["url"];
 
 
        /* поиск в yandex по тэгам и контексту */
@@ -113,7 +110,7 @@ function xml_parser($xml_str) {
         {
             $search_result = search_in_yandex(trim($tag), $context_info["info"]);
             $yandex_search_url_sum += $search_result["count"];
-            $url_array[] = $search_result["urls"];
+            $url_array[] = $search_result["url"];
 
             /* связь тег-место */
             bind_tag_to_place($db_conn, $tag_id, $point_id);  
@@ -140,8 +137,11 @@ function xml_parser($xml_str) {
 
   $query_words = explode(" ", trim($_POST["query"]));
   
+  $lat = trim($_POST["latitude"]);
+  $lon = trim($_POST["longitude"]);
+
   /* поиск результатов в БД, вывод по-возрастанию */
-  $global_result = array("places" => get_places_by_weight($db_conn, $context_info["info"], $query_words), "urls" => $url_array);
+  $global_result = array("places" => get_places_by_weight($db_conn, $context_info["info"], $query_words, $lat, $lon), "url" => $url_array);
 
   return $global_result;
   

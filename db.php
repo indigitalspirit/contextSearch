@@ -236,10 +236,15 @@ function get_place_id($db_conn, $title) {
 }
 
 /* поиск объектов - вывод по-возрастанию веса */
-function get_places_by_weight($db_conn, $context, $query_words) {
+function get_places_by_weight($db_conn, $context, $query_words, $lat, $lon) {
 	$result_array = array();
 
-	$query = "SELECT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%" . stem($context, STEM_RUSSIAN_UNICODE) . "%' AND (";
+	$lat = explode(".", $lat);
+	$lon = explode(".", $lon);
+
+	logger("DB get_places_by_weight ", "Lat: " . $lat. "Lon: " . $lon. "\n");
+
+	$query = "SELECT DISTINCT places.title, places.description, places.lat, places.lon, places.weight, tags.name, context.name FROM places, tags, mapping_context_tags, mapping, context WHERE mapping.place_id=places.place_id AND places.lat LIKE '%" . $lat[0] ."%' AND places.lon LIKE '%". $lon[0] . "%' AND tags.id=mapping.tag_id AND mapping_context_tags.tag_id=tags.id AND context.id=mapping_context_tags.context_id AND context.name LIKE '%" . stem($context, STEM_RUSSIAN_UNICODE) . "%' AND (";
 
 	//$query_second_part = null;
 
@@ -247,7 +252,7 @@ function get_places_by_weight($db_conn, $context, $query_words) {
 
 		if ($query_words[$i] != null) {
 
-			$query .= "places.title LIKE '%" . $query_words[$i] . "%'";
+			$query .= "places.title LIKE '%" . stem($query_words[$i], STEM_RUSSIAN_UNICODE) . "%'";
 
 			if ($i != (count($query_words) - 1)) {
 			 	$query .= " OR "; 
@@ -256,7 +261,7 @@ function get_places_by_weight($db_conn, $context, $query_words) {
 			
 	}
 
-	$query .= ")";
+	$query .= ") GROUP BY places.weight;";
 	//" GROUP BY places.weight;";//='" . $title . "'"; //
 
 	logger("DB get_places_by_weight ", "QUERY: " . $query . "\n");
